@@ -1,10 +1,53 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Makkah & Madinah Live Streaming</title>
+
 <style>
 * {
-  box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+	font-family: Arial;
+	margin: 0;
+}
+
+/* Header/Footer */
+.header,.footer {
+	padding: 10px;
+	text-align: center;
+	background: red;
+	color: black;
+}
+
+
+/* Column container */
+.row {  
+	display: flex;
+	flex-wrap: wrap;
+}
+
+/* Column container */
+.column {
+	flex: 50%;
+	background-color: gray;
+	padding: 20px;
+}
+
+/* Border */
+.border-single {
+	background-color: gray;
+	color: white;
+	width: 100%;
+	padding: 20px;
+}
+.border-double {
+	background-color: gray;
+	color: white;
+	width: 100%;
+	padding: 0px;
 }
 
 .left {
@@ -34,27 +77,177 @@
     width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
   }
 }
+
+/* Responsive layout - when the screen is less than 700px wide */
+/*@media screen and (max-width: 700px) {
+	.row {   
+		flex-direction: column;
+	}
+}*/
 </style>
+
+
 </head>
 <body>
 
-<h2>Media Queries</h2>
-<p>Resize the browser window.</p>
 
-<p>Make sure you reach the breakpoint at 800px when resizing this frame.</p>
-
-<div class="left">
-  <p>Left Menu</p>
+<!-- Header -->
+<div class="header">
+	<h1>Makkah & Madinah Live Streaming</h1>
 </div>
 
-<!--div class="main">
-  <p>Main Content</p>
-</div-->
+
+<!-- Header -->
+<!--div class="header">
+
+	<!-- ********************** Hajj Live Streaming ********************* -->			
+
+	<!--h2><strong>Hajj Live</strong></h2>
+
+	<!-- https://www.youtube.com/@SaudiChannelOne -->
+
+	<!--iframe width="960" height="540" 
+	src="https://www.youtube.com/embed/live_stream?channel=UC2mWeEHv9IY6i74okFMkGPw" 
+	frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+	<!--iframe width="100%" height="400" 
+	src="https://www.youtube.com/channel/UC2mWeEHv9IY6i74okFMkGPw/live" 
+	frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe-->
+ 
+	<!-- *************************************************************** -->
+
+<!--/div>
+
+<div style="background:red;padding:15px"></div>
+
+<!-- The flexible grid (content) -->
+<div class="row">
+	<div class="column">
+
+		<!--h2></h2-->
+		<div class="row">
+			<div class="column">
+				<div class="border-double">
+
+					<!-- ******************** Makkah Live Streaming ******************** -->
+
+					<p><strong>Makkah - Al-Masjid Al-Haram, Mecca</strong></p>
+
+					<!-- https://www.youtube.com/@SaudiQuranTv -->
+
+					<iframe width="100%" height="400" 
+					src="https://www.youtube.com/embed/live_stream?channel=UCos52azQNBgW63_9uDJoPDA&amp;autoplay=0&amp;mute=1&amp;vq=hd720" 
+					frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+					<!--iframe width="100%" height="400" 
+					src="https://www.youtube.com/channel/UCos52azQNBgW63_9uDJoPDA/live" 
+					frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe-->
+
+					<!-- *************************************************************** -->
+
+				</div>
+			</div>
+
+
+			<div class="column">
+				<div class="border-double">    			
+
+					<!-- ******************** Madinah Live Streaming ******************** -->	
+
+					<p><strong>Madinah - Al-Masjid An-Nabawi, Medina</strong></p>
+
+					<!-- https://www.youtube.com/@SaudiSunnahTv -->
+
+					<iframe width="100%" height="400" 
+					src="https://www.youtube.com/embed/live_stream?channel=UCROKYPep-UuODNwyipe6JMw&amp;autoplay=0&amp;mute=1&amp;vq=hd720" 
+					frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+					<!--iframe width="100%" height="400" 
+					src="https://www.youtube.com/channel/UCROKYPep-UuODNwyipe6JMw/live" 
+					frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe-->
+
+					<!-- *************************************************************** -->
+
+				</div>
+			</div>
+
+		</div>
+
+
+		<!--h2></h2-->
+		<div class="border-single">
+
+			<!-- ********************** Hajj Live Streaming ********************* -->			
+
+			<h2><strong>Hajj Live</strong></h2>
+
+			<!-- https://www.youtube.com/@SaudiChannelOne -->
+
+			<iframe width="100%" height="640" 
+			src="https://www.youtube.com/embed/live_stream?channel=UC2mWeEHv9IY6i74okFMkGPw&amp;autoplay=0&amp;mute=1&amp;vq=hd720" 
+			frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+			<!--iframe width="100%" height="400" 
+			src="https://www.youtube.com/channel/UC2mWeEHv9IY6i74okFMkGPw/live" 
+			frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe-->
+
+			<!-- *************************************************************** -->
+
+		</div>    
+
+
+	</div>
+</div>
+
+ 
+<div class="left">
+
+	<!-- ******************** Makkah Live Streaming ******************** -->
+
+	<p><strong>Makkah - Al-Masjid Al-Haram, Mecca</strong></p>
+
+	<!-- https://www.youtube.com/@SaudiQuranTv -->
+
+	<iframe width="100%" height="400" 
+	src="https://www.youtube.com/embed/live_stream?channel=UCos52azQNBgW63_9uDJoPDA&amp;autoplay=0&amp;mute=1&amp;vq=hd720" 
+	frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+	<!--iframe width="100%" height="400" 
+	src="https://www.youtube.com/channel/UCos52azQNBgW63_9uDJoPDA/live" 
+	frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe-->
+
+	<!-- *************************************************************** -->
+
+</div>
 
 <div class="right">
-  <p>Right Content</p>
+
+	<!-- ******************** Madinah Live Streaming ******************** -->	
+
+	<p><strong>Madinah - Al-Masjid An-Nabawi, Medina</strong></p>
+
+	<!-- https://www.youtube.com/@SaudiSunnahTv -->
+
+	<iframe width="100%" height="400" 
+	src="https://www.youtube.com/embed/live_stream?channel=UCROKYPep-UuODNwyipe6JMw&amp;autoplay=0&amp;mute=1&amp;vq=hd720" 
+	frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+	<!--iframe width="100%" height="400" 
+	src="https://www.youtube.com/channel/UCROKYPep-UuODNwyipe6JMw/live" 
+	frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe-->
+
+	<!-- *************************************************************** -->
+
+</div>
+ 
+ 
+ 
+<!-- Footer -->
+<div class="footer">
+	<h5>Courtesy: The official channel of KSA Qur'an TV<br>
+		Created by: Mohammad Taohidul Hassan<br>
+	</h5>
 </div>
 
 </body>
 </html>
-
