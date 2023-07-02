@@ -1,44 +1,68 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 * {
   box-sizing: border-box;
 }
 
+/* Add a gray background color with some padding */
 body {
-	font-family: Arial;
-	margin: 0;
-}
-
-.header, .footer {
-	background: red;
-	color: white;
-	padding: 10px 0;
-	float: none;
-	text-align: center;
-}
-
-.left {
-  background-color: #2196F3;
+  font-family: Arial;
   padding: 20px;
-  float: left;
-  width: 50%; /* The width is 20%, by default */
+  background: #f1f1f1;
 }
 
-.main {
-  background-color: lightgray;
-  padding: 20px;
-  float: left;
-  width: 100%; /* The width is 60%, by default */
+/* Header/Blog Title */
+.header {
+  padding: 5px; /* 30px */
+  font-size: 25px; /* 40px */
+  text-align: center;
+  background: white;
 }
 
-.right {
-  background-color: #04AA6D;
-  padding: 20px;
+/* Footer */
+.footer {
+  padding: 10px; /* 20px */
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
   float: left;
-  width: 50%; /* The width is 20%, by default */
+  width: 65%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 35%;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 0px; //20px
+}
+
+/* Add a card effect for articles */
+.card {
+   background-color: white;
+   padding: 20px;
+   margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .video-container {
@@ -52,94 +76,99 @@ body {
   top: 0; left: 0; width: 100%; height: 100%; border: 0;
 }
 
-/* Use a media query to add a break point at 800px: */
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 800px) {
-  .left, .right {
-    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
   }
 }
-
 </style>
 </head>
-
 <body>
 
-<div class="header">
-	<h1>Makkah & Madinah Live Streaming</h1>
+<div class="header" style="background: red;	color: white; text-align: center;">
+  <!--h2>Blog Name</h2-->
+  <h2>Makkah & Madinah Live Streaming</h2>
 </div>
 
-<div class="left">
-	<!-- ******************** Makkah Live Streaming ******************** -->
-
-	<p><strong>Makkah - Al-Masjid Al-Haram, Mecca</strong></p>
-
-	<!-- https://www.youtube.com/@SaudiQuranTv -->
-
-	<div class="video-container">
-		<iframe class="video" 
-		src="https://www.youtube.com/embed/live_stream?channel=UCos52azQNBgW63_9uDJoPDA&amp;autoplay=1&amp;mute=1&amp;vq=hd720" 
-		frameborder="0" allow="accelerometer; autoplay; mute; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-	</div>
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <!--h2>TITLE HEADING</h2>
+      <h5>Title description, Dec 7, 2017</h5>
+      <div class="fakeimg" style="height:200px;">Image</div>
+      <p>Some text..</p>
+      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p-->
+	  
+	  <h2>Makkah</h2>
+	  <div class="fakeimg">		  
+		<div class="video-container">
+			<iframe class="video" 
+			src="https://www.youtube.com/embed/live_stream?channel=UCos52azQNBgW63_9uDJoPDA&amp;autoplay=1&amp;mute=1&amp;vq=hd720" 
+			frameborder="0" allow="accelerometer; autoplay; mute; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+	  </div>
+	  <p>Makkah - Al-Masjid Al-Haram, Mecca</p>
+    </div>
 	
-	<!--div class="video-container">
-		src="https://www.youtube.com/channel/UCos52azQNBgW63_9uDJoPDA/live" 
-		frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-	</div-->
-	
-	<!-- *************************************************************** -->
+    <!--div class="card">
+      <!--h2>TITLE HEADING</h2>
+      <h5>Title description, Sep 2, 2017</h5>
+      <div class="fakeimg" style="height:200px;">Image</div>
+      <p>Some text..</p>
+      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p-->
+	  
+	  <!--h2>Madinah - Al-Masjid An-Nabawi, Medina</h2>
+	  <div class="fakeimg">		  
+		<div class="video-container">
+			<iframe class="video" 
+			src="https://www.youtube.com/embed/live_stream?channel=UCROKYPep-UuODNwyipe6JMw&amp;autoplay=1&amp;mute=1&amp;vq=hd720" 
+			frameborder="0" allow="accelerometer; autoplay; mute; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+	  </div>
+      <p>Madinah - Al-Masjid An-Nabawi, Medina</p>	  
+	  
+    </div-->
+  </div>
+  
+  
+  <div class="rightcolumn">
+    <div class="card">
+      <!--h2>About Me</h2>
+      <div class="fakeimg" style="height:100px;">Image</div>
+      <p>Some text about me in culpa qui officia deserunt mollit anim..</p-->
+	  
+	  <h2>Madinah</h2>
+	    <div class="fakeimg">		  
+			<div class="video-container">
+				<iframe class="video" 
+				src="https://www.youtube.com/embed/live_stream?channel=UCROKYPep-UuODNwyipe6JMw&amp;autoplay=1&amp;mute=1&amp;vq=hd720" 
+				frameborder="0" allow="accelerometer; autoplay; mute; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+	    </div>	  
+		<p>Madinah - Al-Masjid An-Nabawi, Medina</p>
+	  
+    </div>
+    <!--div class="card">
+      <h3>Popular Post</h3>
+      <div class="fakeimg">Image</div><br>
+      <div class="fakeimg">Image</div><br>
+      <div class="fakeimg">Image</div>
+    </div-->
+    <!--div class="card">
+      <h3>Follow Me</h3>
+      <p>Some text..</p>
+    </div-->
+  </div>
 </div>
 
-<div class="right">
-	<!-- ******************* Madinah Live Streaming ******************** -->	
-
-	<p><strong>Madinah - Al-Masjid An-Nabawi, Medina</strong></p>
-
-	<!-- https://www.youtube.com/@SaudiSunnahTv -->
-
-	<div class="video-container">
-		<iframe class="video" 
-		src="https://www.youtube.com/embed/live_stream?channel=UCROKYPep-UuODNwyipe6JMw&amp;autoplay=1&amp;mute=1&amp;vq=hd720" 
-		frameborder="0" allow="accelerometer; autoplay; mute; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-	</div>
-	
-	<!--div class="video-container">
-		<iframe class="video" 
-		src="https://www.youtube.com/channel/UCROKYPep-UuODNwyipe6JMw/live" 
-		frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-	</div-->
-	
-	<!-- *************************************************************** -->
-</div>
-
-
-<div class="main">
-	<!-- ********************* Hajj Live Streaming ********************* -->			
-
-	<h2><strong>Hajj Live</strong></h2>
-
-	<!-- https://www.youtube.com/@SaudiChannelOne -->
-
-	<div class="video-container">
-		<iframe class="video" 
-		src="https://www.youtube.com/embed/live_stream?channel=UC2mWeEHv9IY6i74okFMkGPw&amp;autoplay=0&amp;mute=1&amp;vq=hd720" 
-		frameborder="0" allow="accelerometer; autoplay; mute; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-	</div>
-	
-	<!--div class="video-container">
-		<iframe class="video" 
-		src="https://www.youtube.com/channel/UC2mWeEHv9IY6i74okFMkGPw/live" 
-		frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-	</div-->
-	
-	<!-- *************************************************************** -->
-</div>
-
-
-<div class="footer">
-	<h5>Courtesy: The official channel of KSA Qur'an TV<br>
-	    Created by: Mohammad Taohidul Hassan</h5>
+<div class="footer" style="background: red;	color: white; text-align: center;">
+  <!--h2>Footer</h2-->
+  <h5>Courtesy: The official channel of KSA Qur'an TV<br>
+	  Created by: Mohammad Taohidul Hassan</h5>
 </div>
 
 </body>
 </html>
-
