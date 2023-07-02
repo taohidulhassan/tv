@@ -32,14 +32,6 @@ body {
   /*margin: 0;*/
 }
 
-@media (prefers-color-scheme: dark) {
-    body {
-        background-color: black;
-        color: white;
-    }
-}
-
-
 .row:after {
   content: "";
   clear: both;
@@ -83,7 +75,6 @@ body {
 }
 
 
-
 @media screen and (max-width: 800px) {
   .leftcolumn, .rightcolumn {   
     padding: 0;
@@ -91,6 +82,29 @@ body {
   }
 }
 
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: black;
+        color: white;
+    }
+    
+	.header {
+		/*font-size: 40px;*/ /* 40px  */
+		text-align: center;
+		background-color: #5A5A5A; /* white */
+		color: white;
+		padding: 20px;    /* 30px  */
+	}
+
+	.footer {
+		text-align: center;
+		background-color: #5A5A5A; /* #ddd */
+		color: white;
+		padding: 20px;    /* 20px */
+		margin-top: 20px; /* 20px */
+	}
+}
 </style>
 </head>
 <body>
