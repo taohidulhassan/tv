@@ -1,61 +1,65 @@
 <!DOCTYPE html>
 <html>
 <head>
+<title>Makkah & Madinah Live Streaming</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 * {
   box-sizing: border-box;
 }
 
-/* Add a gray background color with some padding */
-body {
-  font-family: Arial;
-  padding: 10px; /* 20px */
-  /*margin: 0;*/
-  background: #f1f1f1;
-}
-
-/* Header/Blog Title */
 .header {
-  padding: 20px; /* 30px */
-  /*font-size: 40px;*/ /* 40px */
   text-align: center;
-  background: red; /* white */
   color: white;
+  background: red; /* white */
+  padding: 20px;   /* 30px  */
 }
 
-/* Footer */
 .footer {
-  padding: 20px; /* 20px */
   text-align: center;
-  background: red; /* #ddd */
   color: white;
+  background: red;  /* #ddd */
+  padding: 20px;    /* 20px */
   margin-top: 20px; /* 20px */
 }
 
-/* Create two unequal columns that floats next to each other */
-/* Left column */
+body {
+  font-family: Arial;
+  background: #f1f1f1;
+  padding: 10px; /* 20px */
+  /*margin: 0;*/
+}
+
+.row:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 .leftcolumn {   
   float: left;
   width: 70%;
   /*margin-left: 10px;*/ /* 0px */
 }
 
-/* Right column */
 .rightcolumn {
   float: left;
+  padding-left: 20px;     /* 20px */
   width: 30%;
-  padding-left: 20px; /* 20px */
   /*margin-right: 10px;*/ /* 0px */
 }
 
-/* Fake image */
-.framing {
-  background-color: red; /* #aaa; */
-  width: 100%;
-  padding: 0px; /* 20px */
+.card {
+   background: green; /* white */
+   padding: 20px;     /* 20px */
+   margin-top: 20px;  /* 20px */
 }
 
+.framing {
+  background: black; /* #aaa; */
+  padding: 0px; /* 20px */
+  width: 100%;
+}
 
 .video-container {
   position: relative;
@@ -68,22 +72,6 @@ body {
   top: 0; left: 0; width: 100%; height: 100%; border: 0;
 }
 
-
-/* Add a card effect for articles */
-.card {
-   background-color: white;
-   padding: 20px; /* 20px */
-   margin-top: 20px; /* 20px */
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 800px) {
   .leftcolumn, .rightcolumn {   
     width: 100%;
@@ -95,19 +83,12 @@ body {
 <body>
 
 <div class="header">
-  <!--h2>Blog Name</h2-->
-  <h2>Makkah & Madinah Live Streaming</h2>
+  <h1>Makkah & Madinah Live Streaming</h1>
 </div>
 
 <div class="row">
   <div class="leftcolumn">
-    <div class="card">
-      <!--h2>TITLE HEADING</h2>
-      <h5>Title description, Dec 7, 2017</h5>
-      <div class="framing" style="height:200px;">Image</div>
-      <p>Some text..</p>
-      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p-->
-	  
+    <div class="card" style="background: #2196F3;">
 	  <!-- https://www.youtube.com/@SaudiQuranTv -->
 	  <h3>Makkah Live</h3>
 	  <div class="framing">		  
@@ -117,16 +98,10 @@ body {
 			frameborder="0" allow="accelerometer; autoplay; mute; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 		</div>
 	  </div>
-	  <p>Makkah - Al-Masjid Al-Haram, Mecca</p>
+	  <p>Al-Masjid Al-Haram, Mecca</p>
     </div>
 	
-    <!--div class="card">
-      <!--h2>TITLE HEADING</h2>
-      <h5>Title description, Sep 2, 2017</h5>
-      <div class="framing" style="height:200px;">Image</div>
-      <p>Some text..</p>
-      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p-->
-	  
+    <!--div class="card" style="background: #04AA6D;">
 	  <!-- https://www.youtube.com/@SaudiSunnahTv -->
 	  <!--h3>Madinah - Al-Masjid An-Nabawi, Medina</h3>
 	  <div class="framing">		  
@@ -136,18 +111,14 @@ body {
 			frameborder="0" allow="accelerometer; autoplay; mute; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 		</div>
 	  </div>
-      <p>Madinah - Al-Masjid An-Nabawi, Medina</p>	  
+      <p>Al-Masjid An-Nabawi, Medina</p>	  
 	  
     </div-->
   </div>
   
   
   <div class="rightcolumn">
-    <div class="card">
-      <!--h2>About Me</h2>
-      <div class="framing" style="height:100px;">Image</div>
-      <p>Some text about me in culpa qui officia deserunt mollit anim..</p-->
-	  
+    <div class="card" style="background: #04AA6D;">
 	  <!-- https://www.youtube.com/@SaudiSunnahTv -->	  
 	  <h3>Madinah Live</h3>
 	    <div class="framing">		  
@@ -157,14 +128,10 @@ body {
 				frameborder="0" allow="accelerometer; autoplay; mute; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 			</div>
 	    </div>	  
-		<p>Madinah - Al-Masjid An-Nabawi, Medina</p>	  
+		<p>Al-Masjid An-Nabawi, Medina</p>	  
     </div>
 	
-    <div class="card">
-      <!--h2>About Me</h2>
-      <div class="framing" style="height:100px;">Image</div>
-      <p>Some text about me in culpa qui officia deserunt mollit anim..</p-->
-	  
+    <div class="card" style="background: #2196F3;">
 	  <!-- https://www.youtube.com/@SaudiChannelOne -->	  
 	  <h3>Hajj Live</h3>
 	    <div class="framing">		  
