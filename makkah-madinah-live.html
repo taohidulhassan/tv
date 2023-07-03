@@ -1,1 +1,187 @@
 
+<!DOCTYPE html>
+<html>
+<head>
+<title>Makkah & Madinah Live Streaming</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.header {
+  /*font-size: 40px;*/ /* 40px  */
+  text-align: center;
+  background-color: black; /* white #bbb */
+  color: white;
+  padding: 20px;    /* 30px  */
+}
+
+.footer {
+  text-align: center;
+  background-color: black; /* #ddd */
+  color: white;
+  padding: 20px;    /* 20px */
+  margin-top: 20px; /* 20px */
+}
+
+body {
+  font-family: Arial;
+  background-color: white; /* #f1f1f1 */
+  color: black;
+  padding: 20px; /* 20px */
+  /*margin: 0;*/
+}
+
+.row:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.leftcolumn {   
+  float: left;
+  width: 70%;
+  /*margin-left: 10px;*/ /* 0px */
+}
+
+.rightcolumn {
+  float: left;
+  padding-left: 20px;     /* 20px */
+  width: 30%;
+  /*margin-right: 10px;*/ /* 0px */
+}
+
+.card {
+   /*background-color: white; /* white */
+   padding: 0;     /* 20px */
+   margin-top: 20px;  /* 20px */
+}
+
+.framing {
+  background-color: black; /* #aaa; */
+  padding: 0px; /* 20px */
+  width: 100%;
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  width: 100%;
+}
+
+.video {
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 100%; border: 0;
+}
+
+
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    padding: 0;
+    width: 100%;
+  }
+}
+
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: black;
+        color: white;
+    }
+    
+	.header, .footer {
+		background-color: white; /* white #5A5A5A */
+		color: black;
+	}
+
+}
+</style>
+</head>
+
+
+<body>
+
+<div class="header">
+  <h1>Makkah & Madinah Live Streaming</h1>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+	  <!-- https://www.youtube.com/@SaudiQuranTv -->
+	  <h3>Makkah Live</h3>
+	  <div class="framing">		  
+		<div class="video-container">
+			<iframe class="video" 
+			src="https://www.youtube.com/embed/live_stream?channel=UCos52azQNBgW63_9uDJoPDA&amp;autoplay=1&amp;mute=1&amp;vq=hd720" 
+			frameborder="0" allow="accelerometer; autoplay; mute; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+	  </div>
+	  <p>Al-Masjid Al-Haram, Mecca</p>
+    </div>
+	
+    <!--div class="card">
+	  <!-- https://www.youtube.com/@SaudiSunnahTv -->
+	  <!--h3>Madinah - Al-Masjid An-Nabawi, Medina</h3>
+	  <div class="framing">		  
+		<div class="video-container">
+			<iframe class="video" 
+			src="https://www.youtube.com/embed/live_stream?channel=UCROKYPep-UuODNwyipe6JMw&amp;autoplay=1&amp;mute=1&amp;vq=hd720" 
+			frameborder="0" allow="accelerometer; autoplay; mute; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+	  </div>
+      <p>Al-Masjid An-Nabawi, Medina</p>	  
+    </div-->
+  </div>
+  
+  
+  <div class="rightcolumn">
+    <div class="card">
+	  <!-- https://www.youtube.com/@SaudiSunnahTv -->	  
+	  <h3>Madinah Live</h3>
+	    <div class="framing">		  
+			<div class="video-container">
+				<iframe class="video" 
+				src="https://www.youtube.com/embed/live_stream?channel=UCROKYPep-UuODNwyipe6JMw&amp;autoplay=1&amp;mute=1&amp;vq=hd720" 
+				frameborder="0" allow="accelerometer; autoplay; mute; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+	    </div>	  
+		<p>Al-Masjid An-Nabawi, Medina</p>	  
+    </div>
+	
+    <div class="card">
+	  <!-- https://www.youtube.com/@SaudiChannelOne -->	  
+	  <h3>Hajj Live</h3>
+	    <div class="framing">		  
+			<div class="video-container">
+				<iframe class="video" 
+				src="https://www.youtube.com/embed/live_stream?channel=UC2mWeEHv9IY6i74okFMkGPw&amp;autoplay=1&amp;mute=1&amp;vq=hd720" 
+				frameborder="0" allow="accelerometer; autoplay; mute; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+	    </div>	  
+		<p>Al-Masjid Al-Haram, Mecca</p>	  
+    </div>
+	
+    <!--div class="card">
+      <h3>Popular Post</h3>
+      <div class="framing">Image</div><br>
+      <div class="framing">Image</div><br>
+      <div class="framing">Image</div>
+    </div-->
+    <!--div class="card">
+      <h3>Follow Me</h3>
+      <p>Some text..</p>
+    </div-->
+  </div>
+</div>
+
+<div class="footer">
+  <h5>Courtesy: The official channel of KSA Qur'an TV<br>
+	  Created by: Mohammad Taohidul Hassan</h5>
+</div>
+
+</body>
+</html>
+
+<!-- https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_blog_layout -->
