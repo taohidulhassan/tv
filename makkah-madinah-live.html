@@ -11,23 +11,22 @@
 .header {
   /*font-size: 40px;*/ /* 40px  */
   text-align: center;
-  background-color: black; /* white #bbb */
-  color: white;
+  color: black;
+  background: #bbb; /* white */
   padding: 20px;    /* 30px  */
 }
 
 .footer {
   text-align: center;
-  background-color: black; /* #ddd */
-  color: white;
+  color: black;
+  background: #ddd; /* #ddd */
   padding: 20px;    /* 20px */
   margin-top: 20px; /* 20px */
 }
 
 body {
   font-family: Arial;
-  background-color: white; /* #f1f1f1 */
-  color: black;
+  background: #f1f1f1;
   padding: 20px; /* 20px */
   /*margin: 0;*/
 }
@@ -52,13 +51,13 @@ body {
 }
 
 .card {
-   /*background-color: white; /* white */
-   padding: 0;     /* 20px */
+   background: white; /* white */
+   padding: 20px;     /* 20px */
    margin-top: 20px;  /* 20px */
 }
 
 .framing {
-  background-color: black; /* #aaa; */
+  background: black; /* #aaa; */
   padding: 0px; /* 20px */
   width: 100%;
 }
@@ -74,30 +73,11 @@ body {
   top: 0; left: 0; width: 100%; height: 100%; border: 0;
 }
 
-
 @media screen and (max-width: 800px) {
   .leftcolumn, .rightcolumn {   
     padding: 0;
     width: 100%;
   }
-}
-
-
-@media (prefers-color-scheme: dark) {
-    body {
-        background-color: black;
-        color: white;
-    }
-    
-	.header {
-		background-color: white; /* white #5A5A5A */
-		color: black;
-	}
-
-	.footer {
-		background-color: white; /* #ddd #5A5A5A */
-		color: black;
-	}
 }
 </style>
 </head>
