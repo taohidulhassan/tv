@@ -57,7 +57,7 @@ body {
 }
 
 .framing {
-    background: black; /* #aaa; */
+    background: white; /* #aaa; */
     padding: 0px;      /* 20px  */
     width: 100%;
 }
@@ -88,6 +88,29 @@ body {
 }
 }
 
+
+a:link {
+  color: green;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: blue;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+
 @media (prefers-color-scheme: dark) {
 body {
     background-color: #1F2324; /* black; */
@@ -102,6 +125,17 @@ body {
 .card {
     background: #181A1B; /* white */
     color: white;
+}
+
+.framing {
+    background: #181A1B; /* white; */
+    color: white;
+}
+
+a:visited {
+  color: skyblue;
+  background-color: transparent;
+  text-decoration: none;
 }
 }
 </style>
@@ -161,12 +195,22 @@ body {
             <p>Al-Masjid Al-Haram, Mecca</p>
         </div>
 
-        <!--div class="card">
-            <h3>Popular Post</h3>
-            <div class="framing">Image</div><br>
-            <div class="framing">Image</div><br>
-            <div class="framing">Image</div>
-        </div-->
+        
+        <div class="card" >
+            <h3>Websites</h3>
+            <div class="framing">
+                <a href="http://www.haramain.info" target="_blank">Haramain Salaah Recordings</a>
+            </div><br>
+            <div class="framing">
+                <a href="https://www.aloula.sa/live/qurantvsa" target="_blank">Makkah Live Stream</a>
+            </div><br>
+            <div class="framing">
+                <a href="https://www.aloula.sa/live/sunnatvsa" target="_blank">Madeenah Live Stream</a>
+            </div><br>
+            <!--div class="framing">
+                <a href="http://makkahlive.net" target="_blank">Makkah Live</a>
+            </div-->
+        </div>
         <!--div class="card">
             <h3>Follow Me</h3>
             <p>Some text..</p>
@@ -175,7 +219,7 @@ body {
 </div>
 
 <div class="footer">
-    <h5>Courtesy: The official channel of KSA Qur'an TV<br>
+    <h5>Courtesy: The official channel of KSA Qur’an TV on YouTube.<br>
         Created by: Mohammad Taohidul Hassan</h5>
 </div>
 
@@ -183,3 +227,4 @@ body {
 </html>
 
 <!-- https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_blog_layout -->
+<!-- style="background: white;" -->
