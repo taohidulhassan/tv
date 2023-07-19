@@ -9,25 +9,28 @@
 }
 
 .header {
-    font-size: 30px;  /* 40px  */
+    font-size: 25px;
+	font-weight: bold;
     text-align: center;
     color: white;
-    background: black; /* white #bbb */
-    padding: 20px;    /* 30px  */
+    background: black;
+    padding: 20px;
 }
 
 .footer {
+    font-size: 12px;
+	font-weight: bold;
     text-align: center;
     color: white;
-    background: black; /* #ddd */
-    padding: 20px;    /* 20px */
-    margin-top: 20px; /* 20px */
+    background: black;
+    padding: 20px;
+    margin-top: 20px;
 }
 
 body {
     font-family: Arial;
     background: #f1f1f1;
-    padding: 20px; /* 20px */
+    padding: 20px;
     /*margin: 0;*/
 }
 
@@ -40,50 +43,58 @@ body {
 .leftcolumn {   
     float: left;
     width: 65%;
-    /*margin-left: 10px;*/ /* 0px */
+    /*margin-left: 10px;*/
 }
 
 .rightcolumn {
     float: left;
-    padding-left: 20px;     /* 20px */
+    padding-left: 20px;
     width: 35%;
-    /*margin-right: 10px;*/ /* 0px  */
+    /*margin-right: 10px;*/
 }
 
 .card {
-    background: white; /* white */
-    padding: 20px;     /* 20px  */
-    margin-top: 20px;  /* 20px  */
+    background: white;
+    padding: 20px;
+    margin-top: 20px;
 }
 
 .framing {
-    background: white; /* #aaa; */
-    padding: 0px;      /* 20px  */
+    background: white;
+    padding: 0px;
     width: 100%;
 }
 
 .video-container {
     position: relative;
-    background: black; /* #aaa; */
-    padding: 0px;      /* 20px  */
+    background: black;
+    padding: 0px;
     padding-bottom: 56.25%;
     width: 100%;
 }
 
 .video {
     position: absolute;
-    top: 0; left: 0; width: 100%; height: 100%; border: 0;
+    top: 0; 
+	left: 0; 
+	width: 100%; 
+	height: 100%; 
+	border: 0;
 }
 
 
 @media screen and (max-width: 800px) {
 body {
-    padding: 0px; /* 20px */
+    padding: 0px;
     margin: 0;
 }
 
-.header, .footer {
-    font-size: 20px;  /* 40px  */
+.header {
+    font-size: 20px;
+}
+
+.footer {
+    font-size: 12px;
 }
 
 .leftcolumn, .rightcolumn {   
@@ -117,22 +128,27 @@ a:active {
 
 @media (prefers-color-scheme: dark) {
 body {
-    background-color: #1F2324; /* black; */
+    background-color: #1F2324;
     color: white;
 }
 
-.header, .footer {
+.header {
+    background-color: black; 
+    color: white;
+}
+
+.footer {
     background-color: black; 
     color: white;
 }
 
 .card {
-    background: #181A1B; /* white */
+    background: #181A1B;
     color: white;
 }
 
 .framing {
-    background: #181A1B; /* white; */
+    background: #181A1B;
     color: white;
 }
 
@@ -147,7 +163,7 @@ a:visited {
 
 
 <body>
-<div class="header"><strong>Makkah & Madinah Live Streaming</strong></div>
+<div class="header">Makkah & Madinah Live Streaming</div>
 
 <div class="row">
     <div class="leftcolumn">
@@ -220,9 +236,8 @@ a:visited {
     </div>
 </div>
 
-<div class="footer">
-    <h5>Courtesy: The official channel of KSA Qur’an TV on YouTube.<br>
-        Created by: Mohammad Taohidul Hassan</h5>
+<div class="footer">Courtesy: The official channel of KSA Qur’an TV on YouTube.<br>
+	Created by: Mohammad Taohidul Hassan
 </div>
 
 </body>
