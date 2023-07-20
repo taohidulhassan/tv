@@ -9,29 +9,32 @@
 }
 
 .header {
+    background: black;
+    color: white;
     font-size: 25px;
     font-weight: bold;
     text-align: center;
-    color: white;
-    background: black;
+    margin: 0px;
     padding: 20px;
 }
 
 .footer {
+    background: black;
+    color: white;
     font-size: 12px;
 	font-weight: bold;
     text-align: center;
-    color: white;
-    background: black;
-    padding: 20px;
+    margin: 0px;
     margin-top: 20px;
+    padding: 20px;
 }
 
 body {
-    font-family: Arial;
     background: #f1f1f1;
+    color: black;
+    font-family: Arial;
+    margin: 0px;
     padding: 20px;
-    /*margin: 0;*/
 }
 
 .row:after {
@@ -42,21 +45,25 @@ body {
 
 .leftcolumn {   
     float: left;
+    margin: 0px;
+    margin-left: 0px;
     width: 65%;
-    /*margin-left: 10px;*/
 }
 
 .rightcolumn {
     float: left;
+    margin: 0px;
+    margin-right: 0px;
+    padding: 0px;
     padding-left: 20px;
     width: 35%;
-    /*margin-right: 10px;*/
 }
 
 .card {
     background: white;
-    padding: 20px;
+    margin: 0px;
     margin-top: 20px;
+    padding: 20px;
 }
 
 .framing {
@@ -66,8 +73,8 @@ body {
 }
 
 .video-container {
-    position: relative;
     background: black;
+    position: relative;
     padding: 0px;
     padding-bottom: 56.25%;
     width: 100%;
@@ -75,18 +82,18 @@ body {
 
 .video {
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 0px;
+    left: 0px;
+    border: 0px;
     width: 100%;
     height: 100%;
-    border: 0;
 }
 
 
 @media screen and (max-width: 800px) {
 body {
+    margin: 0px;
     padding: 0px;
-    margin: 0;
 }
 
 .header {
@@ -98,30 +105,30 @@ body {
 }
 
 .leftcolumn, .rightcolumn {   
-    padding: 0;
+    padding: 0px;
     width: 100%;
 }
 }
 
 
 a:link {
-  color: green;
   background-color: transparent;
+  color: green;
   text-decoration: none;
 }
 a:visited {
-  color: blue;
   background-color: transparent;
+  color: blue;
   text-decoration: none;
 }
 a:hover {
-  color: red;
   background-color: transparent;
+  color: red;
   text-decoration: underline;
 }
 a:active {
-  color: yellow;
   background-color: transparent;
+  color: yellow;
   text-decoration: underline;
 }
 
@@ -153,8 +160,8 @@ body {
 }
 
 a:visited {
-  color: skyblue;
   background-color: transparent;
+  color: skyblue;
   text-decoration: none;
 }
 }
@@ -177,19 +184,8 @@ a:visited {
             </div>
             <p>Al-Masjid Al-Haram, Mecca</p>
         </div>
-
-        <!--div class="card">	  
-            <!--h3>Madinah - Al-Masjid An-Nabawi, Medina</h3>
-            <div class="video-container">
-                <!-- https://www.youtube.com/@SaudiSunnahTv -->
-                <!--iframe class="video" 
-                src="https://www.youtube.com/embed/live_stream?channel=UCROKYPep-UuODNwyipe6JMw&amp;autoplay=1&amp;mute=1&amp;vq=hd720" 
-                frameborder="0" allow="accelerometer; autoplay; mute; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-            <p>Al-Masjid An-Nabawi, Medina</p>	  
-        </div-->
     </div>  
-  
+
     <div class="rightcolumn">
         <div class="card">	    
             <h3>Madinah Live</h3>
@@ -203,17 +199,17 @@ a:visited {
         </div>
 
         <div class="card">	   
-            <h3>Hajj Live</h3>
+            <h3>Saudia Tv</h3>
             <div class="video-container">
                 <!-- https://www.youtube.com/@SaudiChannelOne -->
                 <iframe class="video" 
                 src="https://www.youtube.com/embed/live_stream?channel=UC2mWeEHv9IY6i74okFMkGPw&amp;autoplay=0&amp;mute=1&amp;vq=hd720" 
                 frameborder="0" allow="accelerometer; autoplay; mute; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
-            <p>Mecca</p>
+            <p>Saudi Arabia</p>
         </div>
 
-        
+
         <div class="card" >
             <h3>Websites</h3>
             <div class="framing">
@@ -236,7 +232,8 @@ a:visited {
     </div>
 </div>
 
-<div class="footer">Courtesy: The official channel of KSA Qur’an TV on YouTube.<br>
+<div class="footer">
+    Courtesy: The official channel of KSA Qur’an TV on YouTube.<br>
 	Created by: Mohammad Taohidul Hassan
 </div>
 
