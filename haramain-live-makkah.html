@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Haramain Live Stream</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+    box-sizing: border-box;
+}
+
+.header {
+    background-color: black;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer {
+    background-color: black;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+body {
+    background-color: #f1f1f1;
+    color: black;
+    font-family: Arial;
+    margin: 20px 20px 20px 20px;
+}
+
+.row:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.leftcolumn {   
+    float: left;
+    width: 65%;
+}
+
+.rightcolumn {
+    float: left;
+    width: 35%;
+	padding-left: 20px;
+}
+
+.row {
+	margin: 0 0px;
+}
+
+.column {
+    float: left;
+    width: 50%;
+    padding: 0 10px;
+}
+
+.card {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: white;
+    margin-top: 20px;	
+    padding: 20px;
+}
+
+.framing {
+    background-color: white;   
+    width: 100%;
+}
+
+.video-container {
+    background-color: black;
+    position: relative;
+    padding-bottom: 56.25%;
+    width: 100%;
+}
+
+.video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+@media screen and (max-width: 800px) {
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    font-size: 20px;
+}
+
+.footer {
+    font-size: 12px;
+}
+
+.column {
+    width: 100%;
+    display: block;
+    margin-bottom: 0;
+}
+  
+.leftcolumn, .rightcolumn {   
+    width: 100%;
+	padding: 0;
+}
+}
+
+
+@media (prefers-color-scheme: dark) {
+body {
+    background-color: #1F2324;
+    color: white;
+}
+
+.header {
+    background-color: black; 
+    color: white;
+}
+
+.footer {
+    background-color: black; 
+    color: white;
+}
+
+.card {
+    background-color: #181A1B;
+    color: white;
+}
+
+.framing {
+    background-color: #181A1B;
+    color: white;
+}
+
+a:visited {
+  background-color: transparent;
+  color: skyblue;
+  text-decoration: none;
+}
+}
+
+
+
+a:link {
+  background-color: transparent;
+  color: green;
+  text-decoration: none;
+}
+a:visited {
+  background-color: transparent;
+  color: blue;
+  text-decoration: none;
+}
+a:hover {
+  background-color: transparent;
+  color: red;
+  text-decoration: underline;
+}
+a:active {
+  background-color: transparent;
+  color: yellow;
+  text-decoration: underline;
+}
+
+
+</style>
+</head>
+
+
+<body>
+<div class="header">Haramain Live Stream</div>
+
+<div class="row">
+    <div class="leftcolumn">
+        <div class="card">	  
+            <h3>Makkah Live</h3>
+            <div class="video-container">
+                <!-- https://www.youtube.com/@SaudiQuranTv -->
+                <iframe class="video" 
+                src="https://www.youtube.com/embed/live_stream?channel=UCos52azQNBgW63_9uDJoPDA&amp;autoplay=1&amp;mute=1&amp;vq=hd720" 
+                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <p><a href="haramain-live-stream.html" target="_self">Al-Masjid Al-Haram, Makkah</a></p>	
+        </div>
+    </div>  
+
+    <div class="rightcolumn">
+        <div class="card">	    
+            <h3>Madeenah Live</h3>
+            <div class="video-container">
+                <!-- https://www.youtube.com/@SaudiSunnahTv -->	
+                <iframe class="video" 
+                src="https://www.youtube.com/embed/live_stream?channel=UCROKYPep-UuODNwyipe6JMw&amp;autoplay=1&amp;mute=1&amp;vq=large" 
+                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <p><a href="haramain-live-madeenah.html" target="_self">Al-Masjid An-Nabawi, Madeenah</a></p>	  
+        </div>
+
+        <div class="card" >
+            <h3>Websites</h3>
+            <div class="framing">
+                <a href="http://www.haramain.info" target="_blank">Haramain Salaah Recordings</a>
+            </div><br>
+            <div class="framing">
+                <a href="https://www.aloula.sa/live/qurantvsa" target="_blank">Makkah Live Stream</a>
+            </div><br>
+            <div class="framing">
+                <a href="https://www.aloula.sa/live/sunnatvsa" target="_blank">Madeenah Live Stream</a>
+            </div><br>
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    Courtesy: The official channel of KSA Qur’an TV on YouTube.<br>
+    Created by: Mohammad Taohidul Hassan
+</div>
+
+</body>
+</html>
+
+<!-- https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_blog_layout -->
+<!-- style="background: white;" -->
