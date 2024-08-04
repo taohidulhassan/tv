@@ -30,10 +30,10 @@
 }
 
 body {
-    background-color: #f1f1f1;
-    color: black;
+    background-color: black;
+    color: white;
     font-family: Arial;
-    margin: 20px 20px 20px 20px;
+    margin: 10px 10px 10px 10px;
 }
 
 .row:after {
@@ -50,33 +50,36 @@ body {
 .rightcolumn {
     float: left;
     width: 35%;
-	padding-left: 20px;
+	padding-left: 1px;
 }
 
 .row {
-	margin: 0 -10px;
+	margin: 0 -1px;
 }
 
 .column {
     float: left;
     width: 25%;
-    padding: 0 10px;
+    padding: 0 1px;
 }
 
 .card {
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    background-color: white;
-    margin-top: 20px;	
-    padding: 20px;
+    background-color: black;
+    color: white;
+    margin-top: 5px;	
+    padding: 5px;
 }
 
 .framing {
-    background-color: white;   
+    background-color: white;
+    color: black;
     width: 100%;
 }
 
 .video-container {
     background-color: black;
+    color: white;
     position: relative;
     padding-bottom: 56.25%;
     width: 100%;
@@ -93,17 +96,17 @@ body {
 
 
 @media screen and (max-width: 800px) {
-body {
-    margin: 0;
-    padding: 0;
-}
-
 .header {
     font-size: 20px;
 }
 
 .footer {
     font-size: 12px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
 }
 
 .column {
@@ -121,7 +124,7 @@ body {
 
 @media (prefers-color-scheme: dark) {
 body {
-    background-color: #1F2324;
+    background-color: black;
     color: white;
 }
 
@@ -136,45 +139,15 @@ body {
 }
 
 .card {
-    background-color: #181A1B;
+    background-color: black;
     color: white;
 }
 
 .framing {
-    background-color: #181A1B;
+    background-color: black;
     color: white;
 }
-
-a:visited {
-  background-color: transparent;
-  color: skyblue;
-  text-decoration: none;
 }
-}
-
-
-
-a:link {
-  background-color: transparent;
-  color: green;
-  text-decoration: none;
-}
-a:visited {
-  background-color: transparent;
-  color: blue;
-  text-decoration: none;
-}
-a:hover {
-  background-color: transparent;
-  color: red;
-  text-decoration: underline;
-}
-a:active {
-  background-color: transparent;
-  color: yellow;
-  text-decoration: underline;
-}
-
 
 </style>
 </head>
@@ -187,121 +160,121 @@ a:active {
 
     <div class="column">
         <div class="card">	  
-            <h3>Al Jazeera English Live</h3>
+            <h3>Al Jazeera English</h3>
             <div class="video-container">             
                 <iframe class="video" 
                 src="https://www.youtube.com/embed/live_stream?channel=UCNye-wNBqNL5ZzHSJj3l8Bg&amp;autoplay=1&amp;mute=1&amp;vq=medium" 
                 frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
-			<p><a href="https://www.youtube.com/@aljazeeraenglish" target="_blank">Al Jazeera English - YouTube</a></p>	
+			<p><a href="https://www.youtube.com/@aljazeeraenglish" target="_self">Al Jazeera English - YouTube</a></p>	
         </div>
     </div>
     
     <div class="column">
         <div class="card">	  
-            <h3>ATN News Live</h3>
+            <h3>ATN News</h3>
             <div class="video-container">              
                 <iframe class="video" 
                 src="https://www.youtube.com/embed/live_stream?channel=UCKlhfq1ILoAFav7iw5iCnfA&amp;autoplay=1&amp;mute=1&amp;vq=medium" 
                 frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
-			<p><a href="https://www.youtube.com/@ATNNewsLive" target="_blank">ATN News - YouTube</a></p>	
+			<p><a href="https://www.youtube.com/@ATNNewsLive" target="_self">ATN News - YouTube</a></p>	
         </div>
     </div> 
 
     <div class="column">
         <div class="card">	  
-            <h3>Barta24 Live</h3>
+            <h3>Barta24</h3>
             <div class="video-container">               
                 <iframe class="video" 
                 src="https://www.youtube.com/embed/live_stream?channel=UCqhC0YFetNVYsCJR3nPCSQQ&amp;autoplay=1&amp;mute=1&amp;vq=medium" 
                 frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
-			<p><a href="https://www.youtube.com/@Barta24" target="_blank">Barta24 - YouTube</a></p>	
+			<p><a href="https://www.youtube.com/@Barta24" target="_self">Barta24 - YouTube</a></p>	
         </div>
     </div>
     
     <div class="column">
         <div class="card">	  
-            <h3>Channel 24 Live</h3>
+            <h3>Channel 24</h3>
             <div class="video-container">             
                 <iframe class="video" 
                 src="https://www.youtube.com/embed/live_stream?channel=UCHLqIOMPk20w-6cFgkA90jw&amp;autoplay=1&amp;mute=1&amp;vq=medium" 
                 frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
-			<p><a href="https://www.youtube.com/@channel24digital" target="_blank">Channel 24 - YouTube</a></p>	
+			<p><a href="https://www.youtube.com/@channel24digital" target="_self">Channel 24 - YouTube</a></p>	
         </div>
     </div> 
 
     <div class="column">
         <div class="card">	  
-            <h3>DBC NEWS Live</h3>
+            <h3>DBC NEWS</h3>
             <div class="video-container">            
                 <iframe class="video" 
                 src="https://www.youtube.com/embed/live_stream?channel=UCUvXoiDEKI8VZJrr58g4VAw&amp;autoplay=1&amp;mute=1&amp;vq=medium" 
                 frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
-			<p><a href="https://www.youtube.com/@dbcnewstv" target="_blank">DBC NEWS - YouTube</a></p>	
+			<p><a href="https://www.youtube.com/@dbcnewstv" target="_self">DBC NEWS - YouTube</a></p>	
         </div>
     </div>
         
     <div class="column">
         <div class="card">	  
-            <h3>Ekhon TV Live</h3>
+            <h3>Ekhon TV</h3>
             <div class="video-container">               
                 <iframe class="video" 
                 src="https://www.youtube.com/embed/live_stream?channel=UCWVqdPTigfQ-cSNwG7O9MeA&amp;autoplay=1&amp;mute=1&amp;vq=medium" 
                 frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
-			<p><a href="https://www.youtube.com/@ekhontv" target="_blank">Ekhon TV - YouTube</a></p>	
+			<p><a href="https://www.youtube.com/@ekhontv" target="_self">Ekhon TV - YouTube</a></p>	
         </div>
     </div>
  
     <div class="column">
         <div class="card">	    
-            <h3>Jamuna TV Live</h3>
+            <h3>Jamuna TV</h3>
             <div class="video-container">
                 <iframe class="video" 
                 src="https://www.youtube.com/embed/live_stream?channel=UCN6sm8iHiPd0cnoUardDAnw&amp;autoplay=1&amp;mute=1&amp;vq=medium" 
                 frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
-            <p><a href="https://www.youtube.com/@JamunaTVbd" target="_blank">Jamuna TV - YouTube</a></p>
+            <p><a href="https://www.youtube.com/@JamunaTVbd" target="_self">Jamuna TV - YouTube</a></p>
         </div>
     </div>
 
     <div class="column">
         <div class="card">	  
-            <h3>Jamuna TV Plus Live</h3>
+            <h3>Jamuna TV Plus</h3>
             <div class="video-container">             
                 <iframe class="video" 
                 src="https://www.youtube.com/embed/live_stream?channel=UCDj9HHrRUzlsTuPQN0PHxjw&amp;autoplay=1&amp;mute=1&amp;vq=medium" 
                 frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
-			<p><a href="https://www.youtube.com/@jamunatvplus" target="_blank">Jamuna TV Plus - YouTube</a></p>	
+			<p><a href="https://www.youtube.com/@jamunatvplus" target="_self">Jamuna TV Plus - YouTube</a></p>	
         </div>
     </div>
                
     <div class="column">
         <div class="card">	  
-            <h3>Janata TV Live</h3>
+            <h3>Janata TV</h3>
             <div class="video-container">             
                 <iframe class="video" 
                 src="https://www.youtube.com/embed/live_stream?channel=UCfNAKgvsaVTBCkL5JLcR29g&amp;autoplay=1&amp;mute=1&amp;vq=medium" 
                 frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
-			<p><a href="https://www.youtube.com/@janatatvnewsbd" target="_blank">Janata TV - YouTube</a></p>	
+			<p><a href="https://www.youtube.com/@janatatvnewsbd" target="_self">Janata TV - YouTube</a></p>	
         </div>
     </div>
     
     <div class="column">
         <div class="card">	  
-            <h3>Somoy TV Live</h3>
+            <h3>Somoy TV</h3>
             <div class="video-container">             
                 <iframe class="video" 
                 src="https://www.youtube.com/embed/live_stream?channel=UCxHoBXkY88Tb8z1Ssj6CWsQ&amp;autoplay=1&amp;mute=1&amp;vq=medium" 
                 frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
-			<p><a href="https://www.youtube.com/@somoynews360" target="_blank">Somoy TV - YouTube</a></p>	
+			<p><a href="https://www.youtube.com/@somoynews360" target="_self">Somoy TV - YouTube</a></p>	
         </div>
     </div> 
 
@@ -310,126 +283,126 @@ a:active {
  
      <div class="column">
         <div class="card">	  
-            <h3>Independent TV Live</h3>
+            <h3>Independent TV</h3>
             <div class="video-container">              
                 <iframe class="video" 
                 src="https://www.youtube.com/embed/live_stream?channel=UCATUkaOHwO9EP_W87zCiPbA&amp;autoplay=1&amp;mute=1&amp;vq=medium" 
                 frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
-			<p><a href="https://www.youtube.com/@IndependentTelevision" target="_blank">Independent TV - YouTube</a></p>	
+			<p><a href="https://www.youtube.com/@IndependentTelevision" target="_self">Independent TV - YouTube</a></p>	
         </div>
     </div>
           
     <div class="column">
         <div class="card">	  
-            <h3>Gazi TV Live</h3>
+            <h3>Gazi TV</h3>
             <div class="video-container">              
                 <iframe class="video" 
                 src="https://www.youtube.com/embed/live_stream?channel=UCXuHIkEezOy_b1pnkN0-TIg&amp;autoplay=1&amp;mute=1&amp;vq=medium" 
                 frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
-			<p><a href="https://www.youtube.com/@GTVonline" target="_blank">Gazi TV - YouTube</a></p>	
+			<p><a href="https://www.youtube.com/@GTVonline" target="_self">Gazi TV - YouTube</a></p>	
         </div>
     </div>
     
     <div class="column">
         <div class="card">	  
-            <h3>Gazi TV News Live</h3>
+            <h3>Gazi TV News</h3>
             <div class="video-container">             
                 <iframe class="video" 
                 src="https://www.youtube.com/embed/live_stream?channel=UCjIi0uZg4h5Ar8gvLDTrGwA&amp;autoplay=1&amp;mute=1&amp;vq=medium" 
                 frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
-			<p><a href="https://www.youtube.com/@GTVNewsupdate" target="_blank">Gazi TV News - YouTube</a></p>	
+			<p><a href="https://www.youtube.com/@GTVNewsupdate" target="_self">Gazi TV News - YouTube</a></p>	
         </div>
     </div>
     
     <div class="column">
         <div class="card">	  
-            <h3>Ekattor TV Live</h3>
+            <h3>Ekattor TV</h3>
             <div class="video-container">           
                 <iframe class="video" 
                 src="https://www.youtube.com/embed/live_stream?channel=UCtqvtAVmad5zywaziN6CbfA&amp;autoplay=1&amp;mute=1&amp;vq=medium" 
                 frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
-			<p><a href="https://www.youtube.com/@EkattorTelevision" target="_blank">Ekattor TV - YouTube</a></p>	
+			<p><a href="https://www.youtube.com/@EkattorTelevision" target="_self">Ekattor TV - YouTube</a></p>	
         </div>
     </div>
      
     <div class="column">
         <div class="card">	  
-            <h3>???? Live</h3>
+            <h3>????</h3>
             <div class="video-container">              
                 <iframe class="video" 
                 src="https://www.youtube.com/embed/live_stream?channel=????&amp;autoplay=1&amp;mute=1&amp;vq=medium" 
                 frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
-			<p><a href="????" target="_blank">???? - YouTube</a></p>	
+			<p><a href="????" target="_self">???? - YouTube</a></p>	
         </div>
     </div>
     
     
     <div class="column">
         <div class="card">	  
-            <h3>???? Live</h3>
+            <h3>????</h3>
             <div class="video-container">              
                 <iframe class="video" 
                 src="https://www.youtube.com/embed/live_stream?channel=????&amp;autoplay=1&amp;mute=1&amp;vq=medium" 
                 frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
-			<p><a href="????" target="_blank">???? - YouTube</a></p>	
+			<p><a href="????" target="_self">???? - YouTube</a></p>	
         </div>
     </div>
     
     
     <div class="column">
         <div class="card">	  
-            <h3>???? Live</h3>
+            <h3>????</h3>
             <div class="video-container">              
                 <iframe class="video" 
                 src="https://www.youtube.com/embed/live_stream?channel=????&amp;autoplay=1&amp;mute=1&amp;vq=medium" 
                 frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
-			<p><a href="????" target="_blank">???? - YouTube</a></p>	
+			<p><a href="????" target="_self">???? - YouTube</a></p>	
         </div>
     </div>
     
     
     <div class="column">
         <div class="card">	  
-            <h3>???? Live</h3>
+            <h3>????</h3>
             <div class="video-container">              
                 <iframe class="video" 
                 src="https://www.youtube.com/embed/live_stream?channel=????&amp;autoplay=1&amp;mute=1&amp;vq=medium" 
                 frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
-			<p><a href="????" target="_blank">???? - YouTube</a></p>	
+			<p><a href="????" target="_self">???? - YouTube</a></p>	
         </div>
     </div>
     
     
     <div class="column">
         <div class="card">	  
-            <h3>???? Live</h3>
+            <h3>????</h3>
             <div class="video-container">              
                 <iframe class="video" 
                 src="https://www.youtube.com/embed/live_stream?channel=????&amp;autoplay=1&amp;mute=1&amp;vq=medium" 
                 frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
-			<p><a href="????" target="_blank">???? - YouTube</a></p>	
+			<p><a href="????" target="_self">???? - YouTube</a></p>	
         </div>
     </div>
     
     
     <div class="column">
         <div class="card">	  
-            <h3>???? Live</h3>
+            <h3>????</h3>
             <div class="video-container">              
                 <iframe class="video" 
                 src="https://www.youtube.com/embed/live_stream?channel=????&amp;autoplay=1&amp;mute=1&amp;vq=medium" 
                 frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
-			<p><a href="????" target="_blank">???? - YouTube</a></p>	
+			<p><a href="????" target="_self">???? - YouTube</a></p>	
         </div>
     </div>
     
@@ -458,5 +431,6 @@ a:active {
 <iframe width="560" height="315" src="https://www.youtube.com/embed/live_stream?channel=12345" frameborder="0" allowfullscreen></iframe>
 
 https://www.youtube.com/channel/YOUR_CHANNEL_ID/live
+      
 -->
 
