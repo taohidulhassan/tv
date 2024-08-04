@@ -34,25 +34,27 @@ body {
     margin: 10px 10px 10px 10px;
 }
 
-.row:after {
-    content: "";
-    clear: both;
-    display: table;
-}
-
-.leftcolumn {   
-    float: left;
-    width: 65%;
+.card {
+    background-color: #343434;
+    color: white;
+    margin-top: 5px;	
+    padding: 5px;
 }
 
 .rightcolumn {
     float: left;
     width: 35%;
-	padding-left: 1px;
+	padding-left: 10px;
 }
 
 .row {
-	margin: 0 -1px;
+	margin: 0 -10px;
+}
+
+.row:after {
+    content: "";
+    clear: both;
+    display: table;
 }
 
 .column {
@@ -61,11 +63,9 @@ body {
     padding: 0 1px;
 }
 
-.card {
-    background-color: #343434;
-    color: white;
-    margin-top: 1px;	
-    padding: 1px;
+.leftcolumn {   
+    float: left;
+    width: 65%;
 }
 
 .framing {
@@ -102,8 +102,12 @@ body {
 }
 
 body {
-    margin: 0;
-    padding: 0;
+    margin: 10px 10px 10px 10px;
+}
+
+.card {
+    margin-top: 5px;	
+    padding: 5px;
 }
 
 .column {
@@ -120,11 +124,6 @@ body {
 
 
 @media (prefers-color-scheme: dark) {
-body {
-    background-color: black;
-    color: white;
-}
-
 .header {
     background-color: black; 
     color: white;
@@ -132,6 +131,11 @@ body {
 
 .footer {
     background-color: black; 
+    color: white;
+}
+
+body {
+    background-color: black;
     color: white;
 }
 
