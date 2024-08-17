@@ -10,7 +10,7 @@
 
 .header {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    background-color: black;
+    background-color: black; 
     color: white;
     font-size: 25px;
     font-weight: bold;
@@ -20,7 +20,7 @@
 
 .footer {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    background-color: black;
+    background-color: black; 
     color: white;
     font-size: 12px;
     font-weight: bold;
@@ -29,12 +29,14 @@
     padding: 20px;
 }
 
+
 body {
-    background-color: #f1f1f1;
-    color: black;
+    background-color: #1F2324;
+    color: white;
     font-family: Arial;
     margin: 20px 20px 20px 20px;
 }
+
 
 .row:after {
     content: "";
@@ -54,7 +56,7 @@ body {
 }
 
 .row {
-	margin: 0 0px;
+	margin: 0 -10px;
 }
 
 .column {
@@ -63,24 +65,22 @@ body {
     padding: 0 10px;
 }
 
+
 .card {
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    background-color: white;
-    margin-top: 20px;	
-    padding: 20px;
+    background-color: #181A1B;
+    color: white;
+    margin-top: 1px;	
+    padding: 5px;
 }
+
 
 .framing {
-    background-color: white;   
+    background-color: #181A1B;
+    color: white; 
     width: 100%;
 }
 
-.video-container {
-    background-color: black;
-    position: relative;
-    padding-bottom: 56.25%;
-    width: 100%;
-}
 
 .video {
     position: absolute;
@@ -90,6 +90,45 @@ body {
     width: 100%;
     height: 100%;
 }
+
+.video-container {
+    background-color: black;
+    position: relative;
+    padding-bottom: 56.25%;
+    width: 100%;
+}
+
+
+
+a:visited {
+  background-color: transparent;
+  color: skyblue;
+  text-decoration: none;
+}
+
+
+p {
+  font-size: 12px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:visited {
+  color: white;
+}
+
+a:hover {
+  color: red;
+  text-decoration: underline;  
+}
+
+a:active {
+  color: white;
+}
+
 
 
 @media screen and (max-width: 800px) {
@@ -117,6 +156,7 @@ body {
 	padding: 0;
 }
 }
+
 
 
 @media (prefers-color-scheme: dark) {
@@ -153,6 +193,15 @@ a:visited {
 }
 
 
+</style>
+</head>
+
+<!--
+
+body {
+    background-color: #f1f1f1;
+    color: black;
+}
 
 a:link {
   background-color: transparent;
@@ -174,10 +223,7 @@ a:active {
   color: yellow;
   text-decoration: underline;
 }
-
-
-</style>
-</head>
+-->
 
 
 <body>

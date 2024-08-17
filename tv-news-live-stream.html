@@ -9,42 +9,34 @@
 }
 
 .header {
-    background-color: black;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: black; 
     color: white;
     font-size: 25px;
     font-weight: bold;
     text-align: center;
-    margin: 0px 0px 20px 0px;
     padding: 20px;
 }
 
 .footer {
-    background-color: black;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: black; 
     color: white;
     font-size: 12px;
     font-weight: bold;
     text-align: center;
-    margin: 20px 0px 0px 0px;
+    margin-top: 20px;
     padding: 20px;
 }
 
+
 body {
-    background-color: black;
+    background-color: #1F2324;
     color: white;
     font-family: Arial;
-    margin: 10px;
+    margin: 20px 20px 20px 20px;
 }
 
-.card {
-    background-color: #343434;
-    color: white;
-    margin: 1px;
-    padding: 5px;
-}
-
-.row {
-	margin: 0px;
-}
 
 .row:after {
     content: "";
@@ -52,22 +44,43 @@ body {
     display: table;
 }
 
-.column {
-    float: left;
-    width: 25%;
-    padding: 0px;
-}
-
 .leftcolumn {   
     float: left;
     width: 65%;
 }
 
+.rightcolumn {
+    float: left;
+    width: 35%;
+	padding-left: 20px;
+}
+
+.row {
+	margin: 0 -10px;
+}
+
+.column {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+}
+
+
+.card {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: #181A1B;
+    color: white;
+    margin-top: 1px;	
+    padding: 5px;
+}
+
+
 .framing {
-    background-color: white;
-    color: black;
+    background-color: #181A1B;
+    color: white; 
     width: 100%;
 }
+
 
 .video {
     position: absolute;
@@ -80,10 +93,17 @@ body {
 
 .video-container {
     background-color: black;
-    color: white;
     position: relative;
     padding-bottom: 56.25%;
     width: 100%;
+}
+
+
+
+a:visited {
+  background-color: transparent;
+  color: skyblue;
+  text-decoration: none;
 }
 
 
@@ -110,22 +130,19 @@ a:active {
 }
 
 
+
 @media screen and (max-width: 800px) {
+body {
+    margin: 0;
+    padding: 0;
+}
+
 .header {
     font-size: 20px;
 }
 
 .footer {
     font-size: 12px;
-}
-
-body {
-    margin: 0px;
-}
-
-.card {
-    margin: 1px;	
-    padding: 5px;
 }
 
 .column {
@@ -141,7 +158,13 @@ body {
 }
 
 
+
 @media (prefers-color-scheme: dark) {
+body {
+    background-color: #1F2324;
+    color: white;
+}
+
 .header {
     background-color: black; 
     color: white;
@@ -152,25 +175,55 @@ body {
     color: white;
 }
 
-body {
-    background-color: black;
-    color: white;
-}
-
 .card {
-    background-color: #343434;
+    background-color: #181A1B;
     color: white;
 }
 
 .framing {
-    background-color: black;
+    background-color: #181A1B;
     color: white;
+}
+
+a:visited {
+  background-color: transparent;
+  color: skyblue;
+  text-decoration: none;
 }
 }
 
 
 </style>
 </head>
+
+<!--
+
+body {
+    background-color: #f1f1f1;
+    color: black;
+}
+
+a:link {
+  background-color: transparent;
+  color: green;
+  text-decoration: none;
+}
+a:visited {
+  background-color: transparent;
+  color: blue;
+  text-decoration: none;
+}
+a:hover {
+  background-color: transparent;
+  color: red;
+  text-decoration: underline;
+}
+a:active {
+  background-color: transparent;
+  color: yellow;
+  text-decoration: underline;
+}
+-->
 
 
 <body>
